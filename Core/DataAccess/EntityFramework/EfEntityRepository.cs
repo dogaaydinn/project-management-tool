@@ -7,7 +7,7 @@ namespace Core.DataAccess.EntityFramework;
 
 public class EfEntityRepository<TEntity, TContext> : IEntityRepository<TEntity>
     where TEntity : class, IEntity, new()
-    where TContext : DbContextBase, new()
+    where TContext : EfDbContextBase.DbContextBase, new()
 {
     private readonly TContext _dbContext = new();
 

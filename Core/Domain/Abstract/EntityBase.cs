@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core.Models.Entities.Abstract;
 
-public class EntityBase: IEntity
+public class EntityBase : IEntity
 {
     [Key] public Guid Id { get; set; } = Guid.NewGuid();
 

@@ -6,7 +6,6 @@ namespace Core.DataAccess;
 public interface IEntityRepository<T> where T : class, IEntity, new()
 {
     Task<IList<T>> GetAllAsync(Expression<Func<T, bool>>? predicate = null,
-        
         Func<IQueryable<T>, IQueryable<T>>? include = null,
         Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
         bool enableTracking = false);
