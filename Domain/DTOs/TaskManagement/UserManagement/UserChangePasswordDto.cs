@@ -1,6 +1,6 @@
 using Core.Models.Entities.Abstract;
 
-namespace Domain.DTOs.Membership;
+namespace Domain.DTOs.TaskManagement.UserManagement;
 
 public class UserChangePasswordDto : IDto
 {

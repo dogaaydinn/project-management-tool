@@ -1,4 +1,5 @@
 using Core.Utils.DI;
+using Core.Utils.Seed;
 using DataAccess.Context.EntityFramework;
 using DataAccess.Repositories.Abstract.Association;
 using DataAccess.Repositories.Abstract.Communication;
@@ -10,6 +11,7 @@ using DataAccess.Repositories.Concrete.EntityFramework.Communication;
 using DataAccess.Repositories.Concrete.EntityFramework.ProjectManagement;
 using DataAccess.Repositories.Concrete.EntityFramework.TaskManagement;
 using DataAccess.Repositories.Concrete.EntityFramework.UserManagement;
+using DataAccess.Utils.Seed.EntityFramework;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DataAccess.DependencyResolvers;
@@ -41,7 +43,7 @@ public class DataAccessModule : IDependencyInjectionModule
 
         #region Utils
 
-        // services.AddScoped(typeof(ISeeder), typeof(EfSeeder));
+        services.AddScoped(typeof(ISeeder), typeof(EfSeeder));
 
         #endregion Utils
     }

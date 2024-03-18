@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
         <PackageReference Include="EntityFramework" Version="6.4.4"/>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
@@ -25,7 +26,6 @@
 
     <ItemGroup>
         <Folder Include="Constants\Messages\Services\"/>
-        <Folder Include="DependencyResolvers\" />
         <Folder Include="Services\Concrete\" />
         <Folder Include="Utils\Validation\" />
     </ItemGroup>

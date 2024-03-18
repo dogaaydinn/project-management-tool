@@ -10,7 +10,7 @@ public class DomainModule : IDependencyInjectionModule
     {
         #region Auto Mapper
 
-      //  services.AddAutoMapper(typeof(DomainModule));
+       services.AddAutoMapper(typeof(DomainModule));
 
         #endregion Auto Mapper
     }

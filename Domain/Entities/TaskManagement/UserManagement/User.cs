@@ -8,7 +8,7 @@ public class User : EntityBase
 {
     public string Username { get; set; }
     public string Email { get; set; }
-    public string PasswordHash { get; set; } // Consider using a secure hashing algorithm for password storage
+    public byte[] PasswordHash { get; set; } = null!;
     public string Role { get; set; } = UserRoles.TeamMember;
 
     public ICollection<UserTask> UserTasks { get; set; } // Navigation property for many-to-many relationship with Task

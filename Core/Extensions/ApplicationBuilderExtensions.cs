@@ -1,5 +1,5 @@
 using Core.Utils.IoC;
-using Core.Utils.Seed.Abstract;
+using Core.Utils.Seed;
 using Microsoft.AspNetCore.Builder;
 
 namespace Core.Extensions;
